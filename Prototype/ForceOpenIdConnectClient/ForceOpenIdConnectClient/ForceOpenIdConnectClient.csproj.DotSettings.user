@@ -1,0 +1,5 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=FORMS_005CWERKVOORRAAD/@EntryIndexedValue">Forms\Werkvoorraad</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=WERKVOORRAAD/@EntryIndexedValue">Werkvoorraad</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=FORMS_005CWERKVOORRAAD/@EntryIndexedValue">Forms\Werkvoorraad</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=WERKVOORRAAD/@EntryIndexedValue">Werkvoorraad</s:String></wpf:ResourceDictionary>
