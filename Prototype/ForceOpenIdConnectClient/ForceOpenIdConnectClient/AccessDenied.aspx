@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                Je hebt niet de juiste toegangsrol(len) om toegang te krijgen tot deze pagina..
+                Je hebt niet de juiste autorisatierollen om toegang te krijgen tot deze pagina..
             </p>
         </div>
     </div>

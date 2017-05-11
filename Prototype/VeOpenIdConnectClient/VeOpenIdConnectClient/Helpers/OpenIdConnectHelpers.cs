@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using IdentityModel.Client;
@@ -37,7 +39,17 @@ namespace VeOpenIdConnectClient.Helpers
         }
 
         /// <summary>
-        /// Creates a RSA security token based.
+        /// Returns the access token from the current session user
+        /// </summary>
+        /// <param name="request">Http request that contains the session</param>
+        /// <returns>Access token jwt string</returns>
+        public static string GetSessionAccessToken(HttpRequestMessage request)
+        {
+            return request.GetOwinContext().Authentication.User.Claims.FirstOrDefault(x => x.Type == OpenIdConnectParameterNames.AccessToken)?.Value;
+        }
+
+        /// <summary>
+        /// Creates a RSA security token based on Keycloak's public key.
         /// </summary>
         /// <returns>A RSA encyrption provider</returns>
         public static RSACryptoServiceProvider CreateRsaCryptoServiceProvider()

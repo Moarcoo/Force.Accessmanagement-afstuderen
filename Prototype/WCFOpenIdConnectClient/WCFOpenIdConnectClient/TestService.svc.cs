@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Threading.Tasks;
 using System.Web.Security;
 using Newtonsoft.Json.Linq;
 
@@ -14,30 +15,33 @@ namespace WCFOpenIdConnectClient
 {
     public class TestService : ITestService
     { 
-        public string GetData(int value)
+        public async Task<string> GetData(int value)
         {
-            var claimsPrincipal = OpenIdConnectHelpers.GetClaimsPrincipalWithToken().Result;
-                  
+            var claimsPrincipal = await OpenIdConnectHelpers.GetClaimsPrincipalWithToken();
+
             if (claimsPrincipal.IsInRole("admin"))
             {
                 var id = claimsPrincipal.GetUserId();
                 var name = claimsPrincipal.Identity.Name;
                 return $"Your userId is '{id}' and it was requested for {name}";
             }
-            return "Not authorized";
+            else
+            {
+                throw new FaultException<ServiceFault>(new ServiceFault("Not authorized"));
+            }
         }
 
-        public MortgageFile GetMortgageFileForUser(string dossierId)
+        public async Task<MortgageFile> GetMortgageFileForUser(string dossierId)
         {
-            var claimsPrincipal = OpenIdConnectHelpers.GetClaimsPrincipalWithToken().Result;
-            if (!claimsPrincipal.IsInRole("service_access")) throw new UnauthorizedAccessException("user doesn't have rights to access this service"); // TODO: 401 returnen?
+            var claimsPrincipal = await OpenIdConnectHelpers.GetClaimsPrincipalWithToken();
+            if (!claimsPrincipal.IsInRole("service_access")) throw new FaultException<ServiceFault>(new ServiceFault("user doesn't have rights to access this service"));
 
             /**
              * Use the claims in the ClaimsPrinciple for example to get
              * data from a database with the dossierId
              */
             if (dossierId != claimsPrincipal.GetClaimByName("dossierId"))
-                throw new UnauthorizedAccessException("The given dossierId doesn't match the user's dossierId in Keycloak");
+                throw new FaultException<ServiceFault>(new ServiceFault("The given dossier id doesn't match the user's dossier id in Keycloak"));
 
             byte[] b = new byte[16];
             new Random().NextBytes(b);

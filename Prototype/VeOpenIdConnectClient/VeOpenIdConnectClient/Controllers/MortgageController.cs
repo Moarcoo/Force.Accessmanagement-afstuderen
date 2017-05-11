@@ -1,10 +1,12 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Web.Http;
 using Microsoft.IdentityModel.Protocols;
+using VeOpenIdConnectClient.Helpers;
 using VeOpenIdConnectClient.TestService;
 
 namespace VeOpenIdConnectClient.Controllers
@@ -16,7 +18,7 @@ namespace VeOpenIdConnectClient.Controllers
         public IHttpActionResult GetMortgageFileForUser(string dossierId)
         {
             // Get the access token
-            var accessToken = GetSessionAccessToken(Request);
+            var accessToken = OpenIdConnectHelpers.GetSessionAccessToken(Request);
             if (accessToken == null) return null;
 
             // Add the access token to the servicecall's request headers.
@@ -24,26 +26,23 @@ namespace VeOpenIdConnectClient.Controllers
             // The post describes a better implementation but this one shall do for the prototype.
             var client = new TestServiceClient();
             MortgageFile mortgageFile;
+
+            // Open a OperationContextScope so we can edit the service calls http headers
             using (var scope = new OperationContextScope(client.InnerChannel))
             {
                 var httpRequestProperty = new HttpRequestMessageProperty();
                 httpRequestProperty.Headers[HttpRequestHeader.Authorization] = accessToken;
                 OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] = httpRequestProperty;
-                mortgageFile = client.GetMortgageFileForUser(dossierId);
+                try
+                {
+                    mortgageFile = client.GetMortgageFileForUser(dossierId);
+                }
+                catch(FaultException<ServiceFault> fault)
+                {
+                    return Json(fault.Detail.Message);
+                }
             }
-
-            if (mortgageFile == null) return BadRequest();
             return Json(mortgageFile);
-        }
-
-        /// <summary>
-        /// Returns the access token from the current session user
-        /// </summary>
-        /// <param name="request">Http request that contains the session</param>
-        /// <returns>Access token jwt string</returns>
-        private string GetSessionAccessToken(HttpRequestMessage request)
-        {
-            return request.GetOwinContext().Authentication.User.Claims.FirstOrDefault(x => x.Type == OpenIdConnectParameterNames.AccessToken)?.Value;
         }
     }
 }

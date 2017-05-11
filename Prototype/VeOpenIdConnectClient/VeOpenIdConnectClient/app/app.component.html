@@ -1,17 +1,46 @@
-﻿<h1 *ngIf="token">Hello {{getValueFromToken("name")}}</h1>
-<!--<p *ngIf="token">{{token | json}}</p>-->
-<ul *ngIf="token">
-    <li *ngFor="let claim of token">
-        {{claim.type}}: {{claim.value}}
-    </li>
-</ul>
-<p>
-    <button *ngIf="session && session.isAuthenticated" (click)="logout()">Logout</button>
-    <button *ngIf="!session || !session.isAuthenticated" (click)="login()">Login</button>
-</p>
-<p>
-    <input *ngIf="session && session.isAuthenticated" type="text" name="dossierId" id="dossierId"/>
-    <button *ngIf="session && session.isAuthenticated" (click)="getMortgageFileForUser()">Get users mortgagefile</button>
-    <button *ngIf="session && session.isAuthenticated" (click)="getIdToken()">Get id token</button>
-</p>
-<p *ngIf="mortgageFile">{{mortgageFile | json}}</p>
+﻿<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div id="header" class="row">
+            <div class="col-lg-4">
+                <h1>Vé OpenId Connect Client</h1>
+                <h1>
+                    <small *ngIf="token">Welkom {{getValueFromToken("name")}}</small>
+                </h1>
+            </div>
+
+            <div class="col-lg-2">
+                <input class="form-control" *ngIf="session && session.isAuthenticated" type="text" name="dossierId" id="dossierId" />
+                <p *ngIf="mortgageFile">{{mortgageFile | json}}</p>
+            </div>
+            <div class="col-lg-4">
+                <button class="btn btn-default" *ngIf="session && session.isAuthenticated" (click)="getMortgageFileForUser()">Get users mortgagefile</button>
+            </div>
+
+            <div id="login" class="col-lg-2">
+                <button class="btn btn-primary" *ngIf="session && session.isAuthenticated" (click)="logout()">Logout</button>
+                <button class="btn btn-primary" *ngIf="!session || !session.isAuthenticated" (click)="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="row">
+    <div class="container-fluid">
+        <div class="col-lg-4">
+            <div class="btn">
+                <button class="btn btn-primary" *ngIf="session && session.isAuthenticated" (click)="getIdToken()">Get id token</button>
+            </div>
+            <table *ngIf="token" class="table col-md-4 table-striped">
+                <tr class="claims">
+                    <th><b>Type</b></th>
+                    <th><b>Value</b></th>
+                </tr>
+                <tr *ngFor="let claim of token">
+                    <td>{{claim.type}}</td>
+                    <td>{{claim.value}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

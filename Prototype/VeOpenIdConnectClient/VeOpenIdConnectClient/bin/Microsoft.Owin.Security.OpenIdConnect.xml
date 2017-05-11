@@ -121,17 +121,15 @@
             </summary>
             <returns>An <see cref="T:Microsoft.Owin.Security.AuthenticationTicket"/> if successful.</returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.AddNonceToMessage(Microsoft.IdentityModel.Protocols.OpenIdConnectMessage)" -->
-        <member name="M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.RememberNonce(Microsoft.IdentityModel.Protocols.OpenIdConnectMessage,System.String)">
+        <member name="M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.AddNonceToMessage(Microsoft.IdentityModel.Protocols.OpenIdConnectMessage)">
             <summary>
-            'Remembers' the nonce associated with this message. By default the nonce added as a secure cookie.
+            Sets <see cref="P:Microsoft.IdentityModel.Protocols.OpenIdConnectMessage.Nonce"/> to <see cref="!:Options.ProtocolValidator.GenerateNonce"/>.
             </summary>
-            <param name="message"><see cref="T:Microsoft.IdentityModel.Protocols.OpenIdConnectMessage"/> associatied with the nonce.</param>
-            <param name="nonce">the nonce to remember.</param>
-            <remarks>A cookie is added with the name obtained from  <see cref="M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.GetNonceKey(System.String)"/>.</remarks>
+            <param name="message">the <see cref="T:Microsoft.IdentityModel.Protocols.OpenIdConnectMessage"/> being processed.</param>
+            <remarks>The 'nonce' is protected using <see cref="!:Options.StateDataFormat.Protect"/>. 
+            <para>A cookie named: 'OpenIdConnectAuthenticationDefaults.CookiePrefix + OpenIdConnectAuthenticationDefaults.Nonce + Options.AuthenticationType' is attached to the Response.</para></remarks>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.RetrieveNonce(Microsoft.IdentityModel.Protocols.OpenIdConnectMessage)" -->
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.GetNonceKey(System.String)" -->
         <member name="M:Microsoft.Owin.Security.OpenIdConnect.OpenIdConnectAuthenticationHandler.InvokeAsync">
             <summary>
             Calls InvokeReplyPathAsync
@@ -400,7 +398,7 @@
         </member>
         <member name="P:Microsoft.Owin.Security.OpenIdConnect.Resources.Exception_ValidatorHandlerMismatch">
             <summary>
-              Looks up a localized string similar to An ICertificateValidator cannot be specified at the same time as an HttpMessageHandler unless it is a WebRequestHandler..
+              Looks up a localized string similar to An ICertificateValidator cannot be specified at the same time as an HttpMessageHandler unless it is a An ICertificateValidator cannot be specified at the same time as an HttpMessageHandler unless it is a WebRequestHandler..
             </summary>
         </member>
     </members>

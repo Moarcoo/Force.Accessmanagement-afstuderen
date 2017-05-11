@@ -15,6 +15,7 @@ namespace ForceOpenIdConnectClient
     public partial class Default : Page
     {
         protected IEnumerable<Claim> Claims { get; set; }
+        protected UserRepresentation User { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,8 +32,14 @@ namespace ForceOpenIdConnectClient
                 lastName = "Account",
                 enabled = true
             };
-            //KeycloakHelpers.GetUserRepresentation(Context);
-            var response = KeycloakHelpers.CreateUser(userRepresentation, Context);
+            
+            var response = KeycloakHelpers.CreateUserRepresentation(userRepresentation, Context);
+            if (response.IsSuccessStatusCode)
+            {
+                User = KeycloakHelpers.GetUserRepresentation(Context);
+                User.attributes.Add("dossierId", new []{"12345"});
+                var updatedUser = KeycloakHelpers.UpdateUserRepresentation(User, Context);
+            }
         }
     }
 }

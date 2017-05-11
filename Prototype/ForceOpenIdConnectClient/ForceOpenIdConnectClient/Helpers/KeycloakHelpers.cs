@@ -23,16 +23,14 @@ namespace ForceOpenIdConnectClient.Helpers
         /// <param name="userRepresentation"></param>
         /// <param name="context"></param>
         /// <returns>The response message from Keycloak</returns>
-        public static async Task<HttpResponseMessage> CreateUser(UserRepresentation userRepresentation, HttpContext context)
+        public static HttpResponseMessage CreateUserRepresentation(UserRepresentation userRepresentation, HttpContext context)
         {
             using (var client = new HttpClient())
             {
                 // Choose between using the default admin account or the session user (The session user needs to have the appropriate manage-users role from the master-realm client).
                 //var tokenResult = await GetAdminAccessToken();
                 var accessToken = GetSessionAccessToken(context);
-
-                var request = new HttpRequestMessage(HttpMethod.Post, Constants.keycloak_api_user_endpoint);
-                request.Headers.Authorization = AuthenticationHeaderValue.Parse("bearer " + /*tokenResult.*/accessToken);
+                var request = CreateHttpRequestMessage(HttpMethod.Post, Constants.keycloak_api_user_endpoint, accessToken);
                     
                 var content = JsonConvert.SerializeObject(userRepresentation);
                 request.Content = new StringContent(content, Encoding.UTF8, "application/json");
@@ -45,17 +43,31 @@ namespace ForceOpenIdConnectClient.Helpers
         {
             using (var client = new HttpClient())
             {
-                // Choose between using the default admin account or the session user (The session user needs to have the appropriate manage-users role from the master-realm client).
-                //var tokenResult = await GetAdminAccessToken();
                 var accessToken = GetSessionAccessToken(context);
-
-                var request = new HttpRequestMessage(HttpMethod.Get, Constants.keycloak_api_user_endpoint + "/" + context.Request.GetOwinContext().Authentication.User.GetUserId());
-                request.Headers.Authorization = AuthenticationHeaderValue.Parse("bearer " + accessToken);
+                var request = CreateHttpRequestMessage(HttpMethod.Get,
+                    Constants.keycloak_api_user_endpoint + "/" +
+                    context.Request.GetOwinContext().Authentication.User.GetUserId(), accessToken);
 
                 var response = client.SendAsync(request);
                 var result = response.Result.Content.ReadAsStringAsync().Result;
                 var user = JsonConvert.DeserializeObject<UserRepresentation>(result);
                 return user;
+            }
+        }
+
+        public static async Task<HttpResponseMessage> UpdateUserRepresentation(UserRepresentation user, HttpContext context)
+        {
+            using (var client = new HttpClient())
+            {
+                var accessToken = GetSessionAccessToken(context);
+                var request = CreateHttpRequestMessage(HttpMethod.Put,
+                    Constants.keycloak_api_user_endpoint + "/" +
+                    context.Request.GetOwinContext().Authentication.User.GetUserId(), accessToken);
+                
+                var content = JsonConvert.SerializeObject(user);
+                request.Content = new StringContent(content, Encoding.UTF8, "application/json");
+                var response = await client.SendAsync(request);
+                return response;
             }
         }
 
@@ -75,6 +87,20 @@ namespace ForceOpenIdConnectClient.Helpers
 
             var accessToken = tokenResponseTask.Result.AccessToken;
             return accessToken;
+        }
+
+        /// <summary>
+        /// Creates a HttpRequestMessage with the given parameters
+        /// </summary>
+        /// <param name="method">HttpMethod</param>
+        /// <param name="url">The address of the request</param>
+        /// <param name="token">Access token</param>
+        /// <returns>HttpRequestMessage</returns>
+        private static HttpRequestMessage CreateHttpRequestMessage(HttpMethod method, string url, string token)
+        {
+            var request = new HttpRequestMessage(method, url);
+            request.Headers.Authorization = AuthenticationHeaderValue.Parse("bearer " + token);
+            return request;
         }
 
         /// <summary>

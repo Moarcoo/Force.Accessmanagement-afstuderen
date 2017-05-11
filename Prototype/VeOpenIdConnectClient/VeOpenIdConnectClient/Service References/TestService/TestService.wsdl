@@ -75,6 +75,12 @@
     </xs:schema>
     <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xs:complexType name="ServiceFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ServiceFault" nillable="true" type="tns:ServiceFault" />
       <xs:complexType name="MortgageFile">
         <xs:sequence>
           <xs:element minOccurs="0" name="Bouwdepot" type="xs:boolean" />
@@ -92,20 +98,28 @@
   <wsdl:message name="ITestService_GetData_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataResponse" />
   </wsdl:message>
+  <wsdl:message name="ITestService_GetData_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient" name="detail" element="q1:ServiceFault" />
+  </wsdl:message>
   <wsdl:message name="ITestService_GetMortgageFileForUser_InputMessage">
     <wsdl:part name="parameters" element="tns:GetMortgageFileForUser" />
   </wsdl:message>
   <wsdl:message name="ITestService_GetMortgageFileForUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetMortgageFileForUserResponse" />
   </wsdl:message>
+  <wsdl:message name="ITestService_GetMortgageFileForUser_ServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient" name="detail" element="q2:ServiceFault" />
+  </wsdl:message>
   <wsdl:portType name="ITestService">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/ITestService/GetData" message="tns:ITestService_GetData_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ITestService/GetDataResponse" message="tns:ITestService_GetData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITestService/GetDataServiceFaultFault" name="ServiceFaultFault" message="tns:ITestService_GetData_ServiceFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetMortgageFileForUser">
       <wsdl:input wsaw:Action="http://tempuri.org/ITestService/GetMortgageFileForUser" message="tns:ITestService_GetMortgageFileForUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ITestService/GetMortgageFileForUserResponse" message="tns:ITestService_GetMortgageFileForUser_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITestService/GetMortgageFileForUserServiceFaultFault" name="ServiceFaultFault" message="tns:ITestService_GetMortgageFileForUser_ServiceFaultFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ITestService" type="tns:ITestService">
@@ -118,6 +132,9 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="GetMortgageFileForUser">
       <soap:operation soapAction="http://tempuri.org/ITestService/GetMortgageFileForUser" style="document" />
@@ -127,6 +144,9 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="ServiceFaultFault">
+        <soap:fault use="literal" name="ServiceFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="TestService">

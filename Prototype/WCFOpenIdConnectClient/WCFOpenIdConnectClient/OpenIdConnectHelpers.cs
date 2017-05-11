@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Threading.Tasks;
 using System.Web;
@@ -24,10 +25,11 @@ namespace WCFOpenIdConnectClient
         {
             // Extract the access token from the authorization header
             var accessTokenJwt = WebOperationContext.Current?.IncomingRequest.Headers[HttpRequestHeader.Authorization];
-            if (accessTokenJwt == null) throw new UnauthorizedAccessException("No Accesstoken in request");
+            if (accessTokenJwt == null) throw new FaultException<ServiceFault>(new ServiceFault("No access token in request"));
 
             // Validate the access token
-            if (!ValidateToken(accessTokenJwt)) throw new UnauthorizedAccessException("Token is not valid"); ;
+            var isValid = await ValidateToken(accessTokenJwt);
+            if (!isValid) throw new FaultException<ServiceFault>(new ServiceFault("Token is not valid"));
 
             // Get the claims from the UserInfo endpoint
             var userInfoClient = new UserInfoClient(Constants.oidc_userinfo_endpoint);
@@ -37,8 +39,6 @@ namespace WCFOpenIdConnectClient
             // Create and return a ClaimsPrincipal with the received claims
             ClaimsPrincipal principal = new ClaimsPrincipal(new ClaimsIdentity(claims, null, Constants.keycloak_name_claim, Constants.keycloak_service_roles_claim));
 
-            if (!principal.IsInRole("service_access")) throw new UnauthorizedAccessException("User is not authorized to access this service");
-
             return principal;
         }
 
@@ -47,14 +47,14 @@ namespace WCFOpenIdConnectClient
         /// </summary>
         /// <param name="jwtToken">Json Web Token</param>
         /// <returns>a boolean indicating if the validation succeeded or failed</returns>
-        public static bool ValidateToken(string jwtToken)
+        public static async Task<bool> ValidateToken(string jwtToken)
         {
             // Check is token is well formed following the rfc7519 standard
             var tokenvalidator = new JwtSecurityTokenHandler();
             if (!tokenvalidator.CanReadToken(jwtToken)) return false;
 
             // Create a security key
-            var rsa = CreateRsaCryptoServiceProvider();
+            var rsa = await CreateRsaCryptoServiceProvider();
 
             // Validate the token
             try
@@ -79,7 +79,7 @@ namespace WCFOpenIdConnectClient
             }
             catch (Exception e)
             {
-                throw new Exception("Something went wrong with the token validation: " + e.Message);
+                throw new FaultException<ServiceFault>(new ServiceFault("Something went wrong with the token validation:" + e.Message));
             }
             return true;
         }
@@ -88,9 +88,9 @@ namespace WCFOpenIdConnectClient
         /// Creates a RSA security token based.
         /// </summary>
         /// <returns>A RSA encyrption provider</returns>
-        private static RSACryptoServiceProvider CreateRsaCryptoServiceProvider()
+        private static async Task<RSACryptoServiceProvider> CreateRsaCryptoServiceProvider()
         {
-            var keys = GetTokenKeys().Result;
+            var keys = await GetTokenKeys();
             
             RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
             rsa.ImportParameters(

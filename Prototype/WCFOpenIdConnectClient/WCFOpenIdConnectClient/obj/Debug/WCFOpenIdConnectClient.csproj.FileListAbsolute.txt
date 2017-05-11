@@ -21,3 +21,26 @@ D:\Marco\Documenten\Visual Studio 2015\Projects\WCFOpenIdConnectClient\WCFOpenId
 D:\Marco\Documenten\Visual Studio 2015\Projects\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\IdentityModel.xml
 D:\Marco\Documenten\Visual Studio 2015\Projects\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.Constants.resources
 D:\Marco\Documenten\Visual Studio 2015\Projects\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.csproj.GenerateResource.Cache
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\WCFOpenIdConnectClient.dll.config
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\WCFOpenIdConnectClient.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\WCFOpenIdConnectClient.pdb
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\IdentityModel.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Logging.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Newtonsoft.Json.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\System.ValueTuple.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\IdentityModel.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Logging.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\Newtonsoft.Json.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.csprojResolveAssemblyReference.cache
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.Constants.resources
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.csproj.GenerateResource.Cache
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.dll
+D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\WCFOpenIdConnectClient\WCFOpenIdConnectClient\obj\Debug\WCFOpenIdConnectClient.pdb
