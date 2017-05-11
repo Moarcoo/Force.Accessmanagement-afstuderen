@@ -1,0 +1,17 @@
+﻿<h1 *ngIf="token">Hello {{getValueFromToken("name")}}</h1>
+<!--<p *ngIf="token">{{token | json}}</p>-->
+<ul *ngIf="token">
+    <li *ngFor="let claim of token">
+        {{claim.type}}: {{claim.value}}
+    </li>
+</ul>
+<p>
+    <button *ngIf="session && session.isAuthenticated" (click)="logout()">Logout</button>
+    <button *ngIf="!session || !session.isAuthenticated" (click)="login()">Login</button>
+</p>
+<p>
+    <input *ngIf="session && session.isAuthenticated" type="text" name="dossierId" id="dossierId"/>
+    <button *ngIf="session && session.isAuthenticated" (click)="getMortgageFileForUser()">Get users mortgagefile</button>
+    <button *ngIf="session && session.isAuthenticated" (click)="getIdToken()">Get id token</button>
+</p>
+<p *ngIf="mortgageFile">{{mortgageFile | json}}</p>

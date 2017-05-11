@@ -1,0 +1,84 @@
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\obj\Debug\Angular2 web app1.csprojResolveAssemblyReference.cache
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\csc.exe
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\csc.exe.config
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\csc.rsp
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\csi.exe
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\csi.rsp
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CodeAnalysis.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.CSharp.Core.targets
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.AppContext.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.Collections.Immutable.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.Diagnostics.StackTrace.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.IO.FileSystem.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\System.Reflection.Metadata.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\vbc.exe
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\vbc.exe.config
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\vbc.rsp
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\VBCSCompiler.exe
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\roslyn\VBCSCompiler.exe.config
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Angular2 web app1.dll.config
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Angular2 web app1.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Angular2 web app1.pdb
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.AspNet.Identity.Core.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.AspNet.Identity.Owin.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Logging.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Tokens.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.Cookies.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.OAuth.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Newtonsoft.Json.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Owin.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.IdentityModel.Tokens.Jwt.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Net.Http.Formatting.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.Owin.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.WebHost.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.AspNet.Identity.Core.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.AspNet.Identity.Owin.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Logging.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.IdentityModel.Tokens.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.Cookies.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.OAuth.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Newtonsoft.Json.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.IdentityModel.Tokens.Jwt.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.Owin.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Net.Http.Formatting.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.WebHost.xml
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\obj\Debug\Angular2 web app1.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\obj\Debug\Angular2 web app1.pdb
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Host.SystemWeb.dll
+d:\marco\documenten\visual studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Cors.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Cors.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\Microsoft.Owin.Cors.xml
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.Cors.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Web.Http.Cors.xml
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\IdentityModel.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Net.Http.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Security.Cryptography.Algorithms.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Security.Cryptography.Encoding.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Security.Cryptography.Primitives.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\System.ValueTuple.dll
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\bin\IdentityModel.xml
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\obj\Debug\Angular2_web_app1.Constants.resources
+D:\Marco\Documenten\Visual Studio 2015\Projects\Angular2 web app1\Angular2 web app1\obj\Debug\Angular2 web app1.csproj.GenerateResource.Cache
