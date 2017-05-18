@@ -124,11 +124,29 @@ namespace VeOpenIdConnectClient {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://localhost:8443/auth/realms/master/authz/authorize.
+        /// </summary>
+        internal static string keycloak_authorization_api_endpoint {
+            get {
+                return ResourceManager.GetString("keycloak_authorization_api_endpoint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to client_roles.
         /// </summary>
         internal static string keycloak_client_roles_claim {
             get {
                 return ResourceManager.GetString("keycloak_client_roles_claim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://localhost:8443/auth/realms/master/authz/entitlement.
+        /// </summary>
+        internal static string keycloak_entitlement_endpoint {
+            get {
+                return ResourceManager.GetString("keycloak_entitlement_endpoint", resourceCulture);
             }
         }
         
@@ -165,6 +183,15 @@ namespace VeOpenIdConnectClient {
         internal static string provider {
             get {
                 return ResourceManager.GetString("provider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WCF-client.
+        /// </summary>
+        internal static string wcfservice_clientid {
+            get {
+                return ResourceManager.GetString("wcfservice_clientid", resourceCulture);
             }
         }
     }

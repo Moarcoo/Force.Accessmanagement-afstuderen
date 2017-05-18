@@ -141,4 +141,10 @@
   <data name="oidc_userinfo_endpoint" xml:space="preserve">
     <value>https://localhost:8443/auth/realms/master/protocol/openid-connect/userinfo</value>
   </data>
+  <data name="wcfservice_clientid" xml:space="preserve">
+    <value>WCF-client</value>
+  </data>
+  <data name="wcfservice_secret" xml:space="preserve">
+    <value>a9bc7aa1-d06a-491d-8f51-a7d28e017862</value>
+  </data>
 </root>

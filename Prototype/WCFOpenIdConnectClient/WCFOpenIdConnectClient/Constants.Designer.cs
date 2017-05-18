@@ -131,5 +131,23 @@ namespace WCFOpenIdConnectClient {
                 return ResourceManager.GetString("oidc_userinfo_endpoint", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WCF-client.
+        /// </summary>
+        internal static string wcfservice_clientid {
+            get {
+                return ResourceManager.GetString("wcfservice_clientid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a9bc7aa1-d06a-491d-8f51-a7d28e017862.
+        /// </summary>
+        internal static string wcfservice_secret {
+            get {
+                return ResourceManager.GetString("wcfservice_secret", resourceCulture);
+            }
+        }
     }
 }

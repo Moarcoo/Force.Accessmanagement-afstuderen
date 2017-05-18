@@ -10,6 +10,7 @@ using System.ServiceModel.Web;
 using System.Threading.Tasks;
 using System.Web;
 using IdentityModel.Client;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.IdentityModel.Tokens;
 using JsonWebKey = IdentityModel.Jwk.JsonWebKey;
 
@@ -21,19 +22,19 @@ namespace WCFOpenIdConnectClient
         /// Gets claims from the OIDC UserInfo endpoint with the access token.
         /// </summary>
         /// <returns>ClaimsPrincipal with claims</returns>
-        public static async Task<ClaimsPrincipal> GetClaimsPrincipalWithToken()
+        public static ClaimsPrincipal GetClaimsPrincipalWithToken()
         {
             // Extract the access token from the authorization header
             var accessTokenJwt = WebOperationContext.Current?.IncomingRequest.Headers[HttpRequestHeader.Authorization];
             if (accessTokenJwt == null) throw new FaultException<ServiceFault>(new ServiceFault("No access token in request"));
 
             // Validate the access token
-            var isValid = await ValidateToken(accessTokenJwt);
-            if (!isValid) throw new FaultException<ServiceFault>(new ServiceFault("Token is not valid"));
+            var token = ValidateToken(accessTokenJwt).Result;
+            if (token == null) throw new FaultException<ServiceFault>(new ServiceFault("Token is not valid"));
 
             // Get the claims from the UserInfo endpoint
             var userInfoClient = new UserInfoClient(Constants.oidc_userinfo_endpoint);
-            var userInfo = await userInfoClient.GetAsync(accessTokenJwt);
+            var userInfo = userInfoClient.GetAsync(accessTokenJwt).Result;
             var claims = userInfo.Claims;
 
             // Create and return a ClaimsPrincipal with the received claims
@@ -47,11 +48,12 @@ namespace WCFOpenIdConnectClient
         /// </summary>
         /// <param name="jwtToken">Json Web Token</param>
         /// <returns>a boolean indicating if the validation succeeded or failed</returns>
-        public static async Task<bool> ValidateToken(string jwtToken)
+        public static async Task<ClaimsPrincipal> ValidateToken(string jwtToken)
         {
+            ClaimsPrincipal token;
             // Check is token is well formed following the rfc7519 standard
             var tokenvalidator = new JwtSecurityTokenHandler();
-            if (!tokenvalidator.CanReadToken(jwtToken)) return false;
+            if (!tokenvalidator.CanReadToken(jwtToken)) return null;
 
             // Create a security key
             var rsa = await CreateRsaCryptoServiceProvider();
@@ -59,29 +61,29 @@ namespace WCFOpenIdConnectClient
             // Validate the token
             try
             {
-                SecurityToken token;
-                tokenvalidator.ValidateToken(
+                SecurityToken securityToken;
+                token = tokenvalidator.ValidateToken(
                     jwtToken,
                     new TokenValidationParameters()
                     {
                         ValidateIssuer = true,
                         ValidIssuer = Constants.keycloak_authority,
                         ValidateAudience = true,
-                        ValidAudience = Constants.angularclient_aud_claim,
+                        ValidAudiences = new List<string>() { Constants.angularclient_aud_claim },
                         ValidateLifetime = true,
                         RoleClaimType = Constants.keycloak_service_roles_claim,
                         NameClaimType = Constants.keycloak_name_claim,
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new RsaSecurityKey(rsa)
                     },
-                    out token
+                    out securityToken
                     );
             }
             catch (Exception e)
             {
                 throw new FaultException<ServiceFault>(new ServiceFault("Something went wrong with the token validation:" + e.Message));
             }
-            return true;
+            return token;
         }
 
         /// <summary>
@@ -123,6 +125,27 @@ namespace WCFOpenIdConnectClient
             string base64 = padded.Replace("_", "/")
                                     .Replace("-", "+");
             return Convert.FromBase64String(base64);
+        }
+
+        /// <summary>
+        /// Login to Keycloak with the service account to get an access token for this client
+        /// </summary>
+        /// <returns>Access token for this client</returns>
+        public static string AuthenticateClient()
+        {
+            var discoveryClient = new DiscoveryClient(Constants.keycloak_authority);
+            var doc = discoveryClient.GetAsync();
+
+            var tokenResponseTask = new TokenClient(doc.Result.TokenEndpoint).RequestAsync(new Dictionary<string, string>
+            {
+                [OpenIdConnectParameterNames.ClientId] = Constants.wcfservice_clientid,
+                [OpenIdConnectParameterNames.ClientSecret] = Constants.wcfservice_secret,
+                [OpenIdConnectParameterNames.GrantType] = "client_credentials",
+                [OpenIdConnectParameterNames.ResponseType] = "token",
+            });
+
+            var tokenResponse = tokenResponseTask;
+            return tokenResponse.Result.AccessToken;
         }
     }
 }

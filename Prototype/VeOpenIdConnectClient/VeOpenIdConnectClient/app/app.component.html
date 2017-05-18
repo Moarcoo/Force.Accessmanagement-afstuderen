@@ -9,11 +9,11 @@
             </div>
 
             <div class="col-lg-2">
-                <input class="form-control" *ngIf="session && session.isAuthenticated" type="text" name="dossierId" id="dossierId" />
-                <p *ngIf="mortgageFile">{{mortgageFile | json}}</p>
+<!--                <input class="form-control" *ngIf="session && session.isAuthenticated" type="text" name="dossierId" id="dossierId" />-->
+                <p *ngIf="contract">{{contract | json}}</p>
             </div>
             <div class="col-lg-4">
-                <button class="btn btn-default" *ngIf="session && session.isAuthenticated" (click)="getMortgageFileForUser()">Get users mortgagefile</button>
+                <button class="btn btn-default" *ngIf="session && session.isAuthenticated" (click)="getContract()">Get users contract</button>
             </div>
 
             <div id="login" class="col-lg-2">

@@ -370,7 +370,7 @@
     <Content Include="tsconfig.json" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <None Include="Service References\TestService\TestService.wsdl" />
-    <Content Include="Service References\TestService\VeOpenIdConnectClient.TestService.MortgageFile.datasource">
+    <Content Include="Service References\TestService\VeOpenIdConnectClient.TestService.Contract.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">

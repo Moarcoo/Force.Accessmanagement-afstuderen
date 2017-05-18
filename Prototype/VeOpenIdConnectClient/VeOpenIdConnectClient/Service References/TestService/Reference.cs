@@ -60,9 +60,9 @@ namespace VeOpenIdConnectClient.TestService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MortgageFile", Namespace="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Contract", Namespace="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient")]
     [System.SerializableAttribute()]
-    public partial class MortgageFile : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Contract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -72,6 +72,9 @@ namespace VeOpenIdConnectClient.TestService {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Guid GuidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PermissionsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double RentePercentageField;
@@ -111,6 +114,19 @@ namespace VeOpenIdConnectClient.TestService {
                 if ((this.GuidField.Equals(value) != true)) {
                     this.GuidField = value;
                     this.RaisePropertyChanged("Guid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Permissions {
+            get {
+                return this.PermissionsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PermissionsField, value) != true)) {
+                    this.PermissionsField = value;
+                    this.RaisePropertyChanged("Permissions");
                 }
             }
         }
@@ -162,12 +178,12 @@ namespace VeOpenIdConnectClient.TestService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetData", ReplyAction="http://tempuri.org/ITestService/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetMortgageFileForUser", ReplyAction="http://tempuri.org/ITestService/GetMortgageFileForUserResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(VeOpenIdConnectClient.TestService.ServiceFault), Action="http://tempuri.org/ITestService/GetMortgageFileForUserServiceFaultFault", Name="ServiceFault", Namespace="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient")]
-        VeOpenIdConnectClient.TestService.MortgageFile GetMortgageFileForUser(string dossierId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetContract", ReplyAction="http://tempuri.org/ITestService/GetContractResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(VeOpenIdConnectClient.TestService.ServiceFault), Action="http://tempuri.org/ITestService/GetContractServiceFaultFault", Name="ServiceFault", Namespace="http://schemas.datacontract.org/2004/07/WCFOpenIdConnectClient")]
+        VeOpenIdConnectClient.TestService.Contract GetContract(string dossierId, string rpt);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetMortgageFileForUser", ReplyAction="http://tempuri.org/ITestService/GetMortgageFileForUserResponse")]
-        System.Threading.Tasks.Task<VeOpenIdConnectClient.TestService.MortgageFile> GetMortgageFileForUserAsync(string dossierId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetContract", ReplyAction="http://tempuri.org/ITestService/GetContractResponse")]
+        System.Threading.Tasks.Task<VeOpenIdConnectClient.TestService.Contract> GetContractAsync(string dossierId, string rpt);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -205,12 +221,12 @@ namespace VeOpenIdConnectClient.TestService {
             return base.Channel.GetDataAsync(value);
         }
         
-        public VeOpenIdConnectClient.TestService.MortgageFile GetMortgageFileForUser(string dossierId) {
-            return base.Channel.GetMortgageFileForUser(dossierId);
+        public VeOpenIdConnectClient.TestService.Contract GetContract(string dossierId, string rpt) {
+            return base.Channel.GetContract(dossierId, rpt);
         }
         
-        public System.Threading.Tasks.Task<VeOpenIdConnectClient.TestService.MortgageFile> GetMortgageFileForUserAsync(string dossierId) {
-            return base.Channel.GetMortgageFileForUserAsync(dossierId);
+        public System.Threading.Tasks.Task<VeOpenIdConnectClient.TestService.Contract> GetContractAsync(string dossierId, string rpt) {
+            return base.Channel.GetContractAsync(dossierId, rpt);
         }
     }
 }

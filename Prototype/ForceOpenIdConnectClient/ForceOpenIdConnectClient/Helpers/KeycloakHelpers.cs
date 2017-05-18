@@ -18,7 +18,7 @@ namespace ForceOpenIdConnectClient.Helpers
     public static class KeycloakHelpers
     {
         /// <summary>
-        /// Create a user in Keycloak
+        /// Create a user from Keycloak
         /// </summary>
         /// <param name="userRepresentation"></param>
         /// <param name="context"></param>
@@ -39,6 +39,11 @@ namespace ForceOpenIdConnectClient.Helpers
             }
         }
 
+        /// <summary>
+        /// Get a user from Keycloak
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns>A UserRepresentation of a Keycloak user</returns>
         public static UserRepresentation GetUserRepresentation(HttpContext context)
         {
             using (var client = new HttpClient())
@@ -55,6 +60,12 @@ namespace ForceOpenIdConnectClient.Helpers
             }
         }
 
+        /// <summary>
+        /// Update a user in Keycloak
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="context"></param>
+        /// <returns>The response message from Keycloak</returns>
         public static async Task<HttpResponseMessage> UpdateUserRepresentation(UserRepresentation user, HttpContext context)
         {
             using (var client = new HttpClient())

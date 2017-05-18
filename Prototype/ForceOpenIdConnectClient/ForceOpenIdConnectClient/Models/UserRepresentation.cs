@@ -6,6 +6,10 @@ using Newtonsoft.Json;
 
 namespace ForceOpenIdConnectClient.Models
 {
+    /// <summary>
+    /// A class object representing a Keycloak user presentation
+    /// The JsonProperty's make sure the json is mapped properly
+    /// </summary>
     public class UserRepresentation
     {
         [JsonProperty("username")]

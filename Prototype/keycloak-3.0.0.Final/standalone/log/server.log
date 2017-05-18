@@ -1,114 +1,7 @@
-2017-05-11 09:36:05,080 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.4.Final
-2017-05-11 09:36:05,129 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2017-05-11 09:36:05,142 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) WFLYCLINF0001: Activating Infinispan subsystem.
-2017-05-11 09:36:05,194 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
-2017-05-11 09:36:05,195 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
-2017-05-11 09:36:05,205 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.2.Final)
-2017-05-11 09:36:05,214 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2017-05-11 09:36:05,220 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 45) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
-2017-05-11 09:36:05,225 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) WFLYNAM0001: Activating Naming Subsystem
-2017-05-11 09:36:05,228 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) WFLYSEC0002: Activating Security Subsystem
-2017-05-11 09:36:05,230 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) WFLYJSF0007: Activated the following JSF Implementations: [main]
-2017-05-11 09:36:05,242 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0003: Undertow 1.3.15.Final starting
-2017-05-11 09:36:05,243 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.3.15.Final starting
-2017-05-11 09:36:05,274 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
-2017-05-11 09:36:05,347 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.4.Final
-2017-05-11 09:36:05,360 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0014: Creating file handler for path 'D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2017-05-11 09:36:05,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
-2017-05-11 09:36:05,442 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.18.Final
-2017-05-11 09:36:05,446 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
-2017-05-11 09:36:05,576 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2017-05-11 09:36:05,583 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
-2017-05-11 09:36:05,584 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2017-05-11 09:36:05,671 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.server.controller.management.security_realm.UndertowRealm.key-manager: org.jboss.msc.service.StartException in service jboss.server.controller.management.security_realm.UndertowRealm.key-manager: WFLYDM0086: The KeyStore can not be found at D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\configuration\keystore.jks
-	at org.jboss.as.domain.management.security.FileKeystore.load(FileKeystore.java:114)
-	at org.jboss.as.domain.management.security.FileKeyManagerService.start(FileKeyManagerService.java:145)
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
-	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-05-11 09:36:05,681 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\deployments
-2017-05-11 09:36:05,696 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
-2017-05-11 09:36:05,769 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2017-05-11 09:36:05,777 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
-2017-05-11 09:36:05,822 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:36:05,823 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:36:05,823 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:36:05,823 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:36:05,825 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:36:06,131 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started offlineSessions cache from keycloak container
-2017-05-11 09:36:06,133 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0002: Started realms cache from keycloak container
-2017-05-11 09:36:06,133 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started keys cache from keycloak container
-2017-05-11 09:36:06,133 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0002: Started sessions cache from keycloak container
-2017-05-11 09:36:06,135 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0002: Started users cache from keycloak container
-2017-05-11 09:36:06,138 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0002: Started work cache from keycloak container
-2017-05-11 09:36:06,138 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0002: Started authorization cache from keycloak container
-2017-05-11 09:36:06,139 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0002: Started loginFailures cache from keycloak container
-2017-05-11 09:36:06,848 INFO  [org.keycloak.services] (ServerService Thread Pool -- 52) KC-SERVICES0001: Loading config from standalone.xml or domain.xml
-2017-05-11 09:36:07,692 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started realmRevisions cache from keycloak container
-2017-05-11 09:36:07,698 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started userRevisions cache from keycloak container
-2017-05-11 09:36:08,592 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
-	name: keycloak-default
-	...]
-2017-05-11 09:36:08,629 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 52) HHH000412: Hibernate Core {5.0.7.Final}
-2017-05-11 09:36:08,629 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000206: hibernate.properties not found
-2017-05-11 09:36:08,630 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000021: Bytecode provider name : javassist
-2017-05-11 09:36:08,650 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 52) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-05-11 09:36:08,731 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2017-05-11 09:36:08,736 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 52) HHH000431: Unable to determine H2 database version, certain features may not work
-2017-05-11 09:36:08,757 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 52) Envers integration enabled? : true
-2017-05-11 09:36:09,087 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 52) HV000001: Hibernate Validator 5.2.3.Final
-2017-05-11 09:36:09,559 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
-2017-05-11 09:36:10,907 INFO  [org.keycloak.storage.ldap.LDAPIdentityStoreRegistry] (ServerService Thread Pool -- 52) Creating new LDAP Store for the LDAP storage provider: 'ldap', LDAP Configuration: {fullSyncPeriod=[604800], pagination=[true], usersDn=[cn=users,dc=test,dc=keycloak,dc=com], connectionPooling=[true], cachePolicy=[DEFAULT], useKerberosForPasswordAuthentication=[false], importEnabled=[true], changedSyncPeriod=[86400], usernameLDAPAttribute=[cn], bindDn=[cn=administrator,cn=users,dc=test,dc=keycloak,dc=com], lastSync=[1494226557], vendor=[ad], uuidLDAPAttribute=[objectGUID], connectionUrl=[ldap://192.168.0.25:389/], allowKerberosAuthentication=[false], syncRegistrations=[true], authType=[simple], debug=[false], searchScope=[2], useTruststoreSpi=[ldapsOnly], priority=[0], userObjectClasses=[person, organizationalPerson, user], rdnLDAPAttribute=[cn], editMode=[WRITABLE], batchSizeForSync=[1000]}, binaryAttributes: []
-2017-05-11 09:36:10,952 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,957 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,970 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakTransactionCommitter from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,972 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,974 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,974 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,975 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,987 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:10,998 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:11,000 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.ServerVersionResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:36:11,087 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 52) WFLYUT0021: Registered web context: /auth
-2017-05-11 09:36:11,096 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
-    ("core-service" => "management"),
-    ("security-realm" => "UndertowRealm")
-]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.server.controller.management.security_realm.UndertowRealm.key-manager" => "org.jboss.msc.service.StartException in service jboss.server.controller.management.security_realm.UndertowRealm.key-manager: WFLYDM0086: The KeyStore can not be found at D:\\Marco\\Documenten\\Force.Accessmanagement-afstuderen\\Prototype\\keycloak-3.0.0.Final\\standalone\\configuration\\keystore.jks"}}
-2017-05-11 09:36:11,149 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 47) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
-2017-05-11 09:36:11,150 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
-WFLYCTL0186:   Services which failed to start:      service jboss.server.controller.management.security_realm.UndertowRealm.key-manager: org.jboss.msc.service.StartException in service jboss.server.controller.management.security_realm.UndertowRealm.key-manager: WFLYDM0086: The KeyStore can not be found at D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\configuration\keystore.jks
-
-2017-05-11 09:36:11,281 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2017-05-11 09:36:11,284 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2017-05-11 09:36:11,286 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) started (with errors) in 7657ms - Started 433 of 798 services (4 services failed or missing dependencies, 534 services are lazy, passive or on-demand)
-2017-05-11 09:45:41,193 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
-2017-05-11 09:45:41,268 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/KeycloakDS]
-2017-05-11 09:45:41,452 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 60) WFLYUT0022: Unregistered web context: /auth
-2017-05-11 09:45:41,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
-2017-05-11 09:45:41,459 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2017-05-11 09:45:41,460 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2017-05-11 09:45:41,463 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0003: Stopped users cache from keycloak container
-2017-05-11 09:45:41,463 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 59) WFLYCLINF0003: Stopped work cache from keycloak container
-2017-05-11 09:45:41,463 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 66) WFLYCLINF0003: Stopped keys cache from keycloak container
-2017-05-11 09:45:41,464 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
-2017-05-11 09:45:41,464 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0003: Stopped loginFailures cache from keycloak container
-2017-05-11 09:45:41,461 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped authorization cache from keycloak container
-2017-05-11 09:45:41,464 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0003: Stopped sessions cache from keycloak container
-2017-05-11 09:45:41,464 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 60) WFLYCLINF0003: Stopped realms cache from keycloak container
-2017-05-11 09:45:41,465 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0003: Stopped offlineSessions cache from keycloak container
-2017-05-11 09:45:41,466 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment keycloak-server.war (runtime-name: keycloak-server.war) in 269ms
-2017-05-11 09:45:41,475 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
-2017-05-11 09:45:41,478 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.3.15.Final stopping
-2017-05-11 09:45:41,485 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) WFLYCLINF0003: Stopped realmRevisions cache from keycloak container
-2017-05-11 09:45:41,488 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) WFLYCLINF0003: Stopped userRevisions cache from keycloak container
-2017-05-11 09:45:41,494 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) stopped in 231ms
-2017-05-11 09:45:50,834 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
-2017-05-11 09:45:50,967 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
-2017-05-11 09:45:51,020 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) starting
-2017-05-11 09:45:51,021 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+2017-05-16 08:59:47,497 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2017-05-16 08:59:49,149 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-05-16 08:59:49,265 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) starting
+2017-05-16 08:59:49,265 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
 	awt.toolkit = sun.awt.windows.WToolkit
 	file.encoding = Cp1252
 	file.encoding.pkg = sun.io
@@ -200,125 +93,354 @@ WFLYCTL0186:   Services which failed to start:      service jboss.server.control
 	user.script = 
 	user.timezone = Europe/Berlin
 	user.variant = 
-2017-05-11 09:45:51,021 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\configuration/logging.properties 
-2017-05-11 09:45:51,768 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2017-05-11 09:45:51,783 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.4.Final
-2017-05-11 09:45:51,790 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.4.Final
-2017-05-11 09:45:51,832 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2017-05-11 09:45:51,886 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2017-05-11 09:45:51,894 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.2.Final)
-2017-05-11 09:45:51,897 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
-2017-05-11 09:45:51,901 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) WFLYCLINF0001: Activating Infinispan subsystem.
-2017-05-11 09:45:51,924 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 45) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
-2017-05-11 09:45:51,927 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) WFLYSEC0002: Activating Security Subsystem
-2017-05-11 09:45:51,944 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) WFLYNAM0001: Activating Naming Subsystem
-2017-05-11 09:45:51,951 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0003: Undertow 1.3.15.Final starting
-2017-05-11 09:45:51,952 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.3.15.Final starting
-2017-05-11 09:45:51,953 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) WFLYJSF0007: Activated the following JSF Implementations: [main]
-2017-05-11 09:45:51,989 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
-2017-05-11 09:45:51,989 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
-2017-05-11 09:45:52,027 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
-2017-05-11 09:45:52,034 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2017-05-11 09:45:52,035 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.4.Final
-2017-05-11 09:45:52,100 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.18.Final
-2017-05-11 09:45:52,131 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
-2017-05-11 09:45:52,131 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0014: Creating file handler for path 'D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2017-05-11 09:45:52,201 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
-2017-05-11 09:45:52,233 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2017-05-11 09:45:52,313 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
-2017-05-11 09:45:52,313 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2017-05-11 09:45:52,364 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\deployments
-2017-05-11 09:45:52,382 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
-2017-05-11 09:45:52,493 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:45:52,498 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
-2017-05-11 09:45:52,832 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0002: Started keys cache from keycloak container
-2017-05-11 09:45:52,834 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0002: Started realms cache from keycloak container
-2017-05-11 09:45:52,834 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started users cache from keycloak container
-2017-05-11 09:45:52,835 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started sessions cache from keycloak container
-2017-05-11 09:45:52,836 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0002: Started offlineSessions cache from keycloak container
-2017-05-11 09:45:52,837 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0002: Started work cache from keycloak container
-2017-05-11 09:45:52,838 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0002: Started loginFailures cache from keycloak container
-2017-05-11 09:45:52,839 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0002: Started authorization cache from keycloak container
-2017-05-11 09:45:52,891 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2017-05-11 09:45:53,297 INFO  [org.keycloak.services] (ServerService Thread Pool -- 54) KC-SERVICES0001: Loading config from standalone.xml or domain.xml
-2017-05-11 09:45:54,185 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started realmRevisions cache from keycloak container
-2017-05-11 09:45:54,191 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started userRevisions cache from keycloak container
-2017-05-11 09:45:55,285 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 54) HHH000204: Processing PersistenceUnitInfo [
+2017-05-16 08:59:49,265 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\configuration/logging.properties 
+2017-05-16 08:59:54,227 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-05-16 08:59:54,251 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.4.Final
+2017-05-16 08:59:54,297 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.4.Final
+2017-05-16 08:59:54,381 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) WFLYSEC0002: Activating Security Subsystem
+2017-05-16 08:59:54,381 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-05-16 08:59:54,381 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) WFLYNAM0001: Activating Naming Subsystem
+2017-05-16 08:59:54,396 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-05-16 08:59:54,381 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 45) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-05-16 08:59:54,396 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-05-16 08:59:54,444 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2017-05-16 08:59:54,448 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2017-05-16 08:59:54,539 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.18.Final
+2017-05-16 08:59:54,629 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-05-16 08:59:54,676 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.2.Final)
+2017-05-16 08:59:55,381 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-05-16 08:59:55,381 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-05-16 08:59:55,381 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.3.15.Final starting
+2017-05-16 08:59:55,381 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0003: Undertow 1.3.15.Final starting
+2017-05-16 08:59:55,561 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-05-16 08:59:55,576 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-05-16 08:59:56,020 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 46) WFLYUT0014: Creating file handler for path 'D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-05-16 08:59:56,121 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
+2017-05-16 08:59:56,123 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-05-16 08:59:56,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2017-05-16 08:59:56,188 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2017-05-16 08:59:56,314 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-05-16 08:59:57,197 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Marco\Documenten\Force.Accessmanagement-afstuderen\Prototype\keycloak-3.0.0.Final\standalone\deployments
+2017-05-16 08:59:57,266 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
+2017-05-16 08:59:57,350 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2017-05-16 08:59:57,350 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2017-05-16 08:59:57,350 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2017-05-16 08:59:57,350 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2017-05-16 08:59:57,466 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started keys cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0002: Started loginFailures cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0002: Started work cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0002: Started users cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started realms cache from keycloak container
+2017-05-16 09:00:01,846 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0002: Started offlineSessions cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0002: Started sessions cache from keycloak container
+2017-05-16 09:00:01,845 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0002: Started authorization cache from keycloak container
+2017-05-16 09:00:05,939 INFO  [org.keycloak.services] (ServerService Thread Pool -- 52) KC-SERVICES0001: Loading config from standalone.xml or domain.xml
+2017-05-16 09:00:10,281 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started realmRevisions cache from keycloak container
+2017-05-16 09:00:10,301 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0002: Started userRevisions cache from keycloak container
+2017-05-16 09:00:11,627 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
 	name: keycloak-default
 	...]
-2017-05-11 09:45:55,377 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 54) HHH000412: Hibernate Core {5.0.7.Final}
-2017-05-11 09:45:55,384 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 54) HHH000206: hibernate.properties not found
-2017-05-11 09:45:55,389 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 54) HHH000021: Bytecode provider name : javassist
-2017-05-11 09:45:55,424 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 54) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-05-11 09:45:55,538 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 54) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2017-05-11 09:45:55,544 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 54) HHH000431: Unable to determine H2 database version, certain features may not work
-2017-05-11 09:45:55,573 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 54) Envers integration enabled? : true
-2017-05-11 09:45:56,019 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 54) HV000001: Hibernate Validator 5.2.3.Final
-2017-05-11 09:45:56,592 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 54) HHH000397: Using ASTQueryTranslatorFactory
-2017-05-11 09:45:57,907 INFO  [org.keycloak.storage.ldap.LDAPIdentityStoreRegistry] (ServerService Thread Pool -- 54) Creating new LDAP Store for the LDAP storage provider: 'ldap', LDAP Configuration: {fullSyncPeriod=[604800], pagination=[true], usersDn=[cn=users,dc=test,dc=keycloak,dc=com], connectionPooling=[true], cachePolicy=[DEFAULT], useKerberosForPasswordAuthentication=[false], importEnabled=[true], changedSyncPeriod=[86400], usernameLDAPAttribute=[cn], bindDn=[cn=administrator,cn=users,dc=test,dc=keycloak,dc=com], lastSync=[1494226557], vendor=[ad], uuidLDAPAttribute=[objectGUID], connectionUrl=[ldap://192.168.0.25:389/], allowKerberosAuthentication=[false], syncRegistrations=[true], authType=[simple], debug=[false], searchScope=[2], useTruststoreSpi=[ldapsOnly], priority=[0], userObjectClasses=[person, organizationalPerson, user], rdnLDAPAttribute=[cn], editMode=[WRITABLE], batchSizeForSync=[1000]}, binaryAttributes: []
-2017-05-11 09:45:57,935 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,938 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,938 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,939 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakTransactionCommitter from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,939 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,940 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,940 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,941 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,942 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:57,942 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 54) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.ServerVersionResource from Application class org.keycloak.services.resources.KeycloakApplication
-2017-05-11 09:45:58,003 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 54) WFLYUT0021: Registered web context: /auth
-2017-05-11 09:45:58,376 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 47) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
-2017-05-11 09:45:58,471 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2017-05-11 09:45:58,473 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2017-05-11 09:45:58,474 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) started in 7855ms - Started 440 of 799 services (534 services are lazy, passive or on-demand)
-2017-05-11 10:06:36,669 ERROR [org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager] (default task-24) Could not query server using DN [cn=users,dc=test,dc=keycloak,dc=com] and filter [(&(cn=testgebruiker1)(objectclass=person)(objectclass=organizationalPerson)(objectclass=user))]: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.getUserByUsername(UserStorageManager.java:317)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUserByUsername(UserCacheSession.java:246)
-	at org.keycloak.models.utils.KeycloakModelUtils.findUserByNameOrEmail(KeycloakModelUtils.java:214)
-	at org.keycloak.authentication.authenticators.browser.AbstractUsernameFormAuthenticator.validateUserAndPassword(AbstractUsernameFormAuthenticator.java:133)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.validateForm(UsernamePasswordForm.java:56)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.action(UsernamePasswordForm.java:49)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:92)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:76)
-	at org.keycloak.authentication.AuthenticationProcessor.authenticationAction(AuthenticationProcessor.java:759)
-	at org.keycloak.services.resources.LoginActionsService.processFlow(LoginActionsService.java:365)
-	at org.keycloak.services.resources.LoginActionsService.processAuthentication(LoginActionsService.java:347)
-	at org.keycloak.services.resources.LoginActionsService.authenticateForm(LoginActionsService.java:401)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2017-05-16 09:00:12,100 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 52) HHH000412: Hibernate Core {5.0.7.Final}
+2017-05-16 09:00:12,101 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000206: hibernate.properties not found
+2017-05-16 09:00:12,102 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 52) HHH000021: Bytecode provider name : javassist
+2017-05-16 09:00:12,269 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 52) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-16 09:00:12,514 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-05-16 09:00:12,521 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 52) HHH000431: Unable to determine H2 database version, certain features may not work
+2017-05-16 09:00:12,594 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 52) Envers integration enabled? : true
+2017-05-16 09:00:13,375 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 52) HV000001: Hibernate Validator 5.2.3.Final
+2017-05-16 09:00:14,145 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
+2017-05-16 09:00:15,682 INFO  [org.keycloak.storage.ldap.LDAPIdentityStoreRegistry] (ServerService Thread Pool -- 52) Creating new LDAP Store for the LDAP storage provider: 'ldap', LDAP Configuration: {fullSyncPeriod=[604800], pagination=[true], usersDn=[cn=users,dc=test,dc=keycloak,dc=com], connectionPooling=[true], cachePolicy=[DEFAULT], useKerberosForPasswordAuthentication=[false], importEnabled=[true], changedSyncPeriod=[86400], usernameLDAPAttribute=[cn], bindDn=[cn=administrator,cn=users,dc=test,dc=keycloak,dc=com], lastSync=[1494226557], vendor=[ad], uuidLDAPAttribute=[objectGUID], connectionUrl=[ldap://192.168.0.11:389/], allowKerberosAuthentication=[false], syncRegistrations=[true], authType=[simple], debug=[false], searchScope=[2], useTruststoreSpi=[ldapsOnly], priority=[0], userObjectClasses=[person, organizationalPerson, user], rdnLDAPAttribute=[cn], editMode=[WRITABLE], batchSizeForSync=[1000]}, binaryAttributes: []
+2017-05-16 09:00:15,781 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,784 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,786 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,787 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakTransactionCommitter from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,790 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,792 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,793 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,793 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,796 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,802 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.ServerVersionResource from Application class org.keycloak.services.resources.KeycloakApplication
+2017-05-16 09:00:15,940 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 52) WFLYUT0021: Registered web context: /auth
+2017-05-16 09:00:16,205 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 47) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
+2017-05-16 09:00:16,385 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-05-16 09:00:16,386 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-05-16 09:00:16,391 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) started in 29671ms - Started 440 of 799 services (534 services are lazy, passive or on-demand)
+2017-05-16 09:43:46,021 WARN  [org.keycloak.events] (default task-32) type=LOGIN_ERROR, realmId=master, clientId=null, userId=null, ipAddress=127.0.0.1, error=ssl_required
+2017-05-16 09:50:49,882 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-12) RESTEASY002005: Failed executing GET /admin/realms/master/clients/76349b07-22a4-498e-86ff-a4b6698413ff: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmAuth.requireView(RealmAuth.java:70)
+	at org.keycloak.services.resources.admin.ClientResource.getClient(ClientResource.java:190)
+	at sun.reflect.GeneratedMethodAccessor602.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 10:09:58,408 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-64) RESTEASY002005: Failed executing GET /admin/realms/master/clients/29cb3da1-9441-42f5-8d6d-dba400128e7f: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmAuth.requireView(RealmAuth.java:70)
+	at org.keycloak.services.resources.admin.ClientResource.getClient(ClientResource.java:190)
+	at sun.reflect.GeneratedMethodAccessor602.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 10:27:24,143 WARN  [org.keycloak.events] (default task-44) type=LOGIN_ERROR, realmId=master, clientId=angular-client, userId=c2ef3f2a-8d3f-4fa6-97af-d3d2091e4bc3, ipAddress=127.0.0.1, error=user_disabled, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:3276/, code_id=ac5f0bfe-104b-4333-9293-acab9cd8888d, username=testgebruiker2
+2017-05-16 11:59:26,299 WARN  [org.keycloak.events] (default task-57) type=LOGIN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=expired_code, code_id=b5471b95-08c5-4fc0-ae22-0ddcbb404b10
+2017-05-16 11:59:27,004 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-48) RESTEASY002005: Failed executing GET /admin/realms/master/clients/76349b07-22a4-498e-86ff-a4b6698413ff: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmAuth.requireView(RealmAuth.java:70)
+	at org.keycloak.services.resources.admin.ClientResource.getClient(ClientResource.java:190)
+	at sun.reflect.GeneratedMethodAccessor602.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 12:11:59,082 WARN  [org.keycloak.events] (default task-61) type=LOGIN_ERROR, realmId=master, clientId=security-admin-console, userId=baba625f-b1a5-4187-960d-d5e997a01066, ipAddress=127.0.0.1, error=invalid_user_credentials, auth_method=openid-connect, auth_type=code, redirect_uri=https://localhost:8443/auth/admin/master/console/?redirect_fragment=%2Frealms%2Fmaster%2Fclients%2F76349b07-22a4-498e-86ff-a4b6698413ff%2Fauthz%2Fresource-server%2Fresource%2F2b3cbcdb-c8f8-4b38-ad65-5210f7d1e05b, code_id=098782ed-27d2-4bac-a539-79b256ae7b4b, username=admin
+2017-05-16 12:13:19,039 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-51) RESTEASY002005: Failed executing GET /admin/realms/master/clients/76349b07-22a4-498e-86ff-a4b6698413ff: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmAuth.requireAny(RealmAuth.java:56)
+	at org.keycloak.services.resources.admin.RealmAdminResource.<init>(RealmAdminResource.java:135)
+	at org.keycloak.services.resources.admin.RealmsAdminResource.getRealmAdmin(RealmsAdminResource.java:205)
+	at sun.reflect.GeneratedMethodAccessor436.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.createResource(ResourceLocatorInvoker.java:79)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:106)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 12:13:19,043 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-30) RESTEASY002005: Failed executing GET /admin/realms/master: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmAuth.requireAny(RealmAuth.java:56)
+	at org.keycloak.services.resources.admin.RealmAdminResource.<init>(RealmAdminResource.java:135)
+	at org.keycloak.services.resources.admin.RealmsAdminResource.getRealmAdmin(RealmsAdminResource.java:205)
+	at sun.reflect.GeneratedMethodAccessor436.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.createResource(ResourceLocatorInvoker.java:79)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:106)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 12:13:19,055 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-45) RESTEASY002005: Failed executing GET /admin/realms: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmsAdminResource.getRealms(RealmsAdminResource.java:110)
+	at sun.reflect.GeneratedMethodAccessor586.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
@@ -364,41 +486,57 @@ WFLYCTL0186:   Services which failed to start:      service jboss.server.control
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 92 more
 
-2017-05-11 10:06:36,673 WARN  [org.keycloak.services] (default task-24) KC-SERVICES0013: Failed authentication: org.keycloak.models.ModelException: LDAP Query failed
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:168)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.getUserByUsername(UserStorageManager.java:317)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUserByUsername(UserCacheSession.java:246)
-	at org.keycloak.models.utils.KeycloakModelUtils.findUserByNameOrEmail(KeycloakModelUtils.java:214)
-	at org.keycloak.authentication.authenticators.browser.AbstractUsernameFormAuthenticator.validateUserAndPassword(AbstractUsernameFormAuthenticator.java:133)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.validateForm(UsernamePasswordForm.java:56)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.action(UsernamePasswordForm.java:49)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:92)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:76)
-	at org.keycloak.authentication.AuthenticationProcessor.authenticationAction(AuthenticationProcessor.java:759)
-	at org.keycloak.services.resources.LoginActionsService.processFlow(LoginActionsService.java:365)
-	at org.keycloak.services.resources.LoginActionsService.processAuthentication(LoginActionsService.java:347)
-	at org.keycloak.services.resources.LoginActionsService.authenticateForm(LoginActionsService.java:401)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2017-05-16 12:13:19,060 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-52) RESTEASY002005: Failed executing GET /admin/serverinfo: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.AdminRoot.getServerInfo(AdminRoot.java:233)
+	at sun.reflect.GeneratedMethodAccessor829.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.createResource(ResourceLocatorInvoker.java:79)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.createResource(ResourceLocatorInvoker.java:58)
+	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:100)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-05-16 12:13:19,064 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-42) RESTEASY002005: Failed executing GET /admin/realms: org.keycloak.services.ForbiddenException
+	at org.keycloak.services.resources.admin.RealmsAdminResource.getRealms(RealmsAdminResource.java:110)
+	at sun.reflect.GeneratedMethodAccessor586.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
@@ -444,864 +582,27 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.keycloak.models.ModelException: Querying of LDAP failed org.keycloak.storage.ldap.idm.query.internal.LDAPQuery@17b28d24
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:207)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	... 64 more
-Caused by: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	... 65 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 92 more
 
-2017-05-11 10:06:36,675 WARN  [org.keycloak.events] (default task-24) type=LOGIN_ERROR, realmId=master, clientId=angular-client, userId=null, ipAddress=127.0.0.1, error=invalid_user_credentials, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:3276/, code_id=982a3f1d-3c7d-4dd3-aad6-d895306063b3, username=testgebruiker1
-2017-05-11 10:07:15,319 ERROR [org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager] (default task-44) Could not query server using DN [cn=users,dc=test,dc=keycloak,dc=com] and filter [(&(cn=administrator)(objectclass=person)(objectclass=organizationalPerson)(objectclass=user))]: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:289)
-	at org.keycloak.storage.UserStorageManager.getUsers(UserStorageManager.java:445)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUsers(UserCacheSession.java:585)
-	at org.keycloak.services.resources.admin.UsersResource.getUsers(UsersResource.java:700)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 88 more
-
-2017-05-11 10:07:15,346 ERROR [io.undertow.request] (default task-44) UT005023: Exception handling request to /auth/admin/realms/master/users: org.jboss.resteasy.spi.UnhandledException: org.keycloak.models.ModelException: LDAP Query failed
-	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:76)
-	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:212)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:168)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:411)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.keycloak.models.ModelException: LDAP Query failed
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:168)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:289)
-	at org.keycloak.storage.UserStorageManager.getUsers(UserStorageManager.java:445)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUsers(UserCacheSession.java:585)
-	at org.keycloak.services.resources.admin.UsersResource.getUsers(UsersResource.java:700)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	... 37 more
-Caused by: org.keycloak.models.ModelException: Querying of LDAP failed org.keycloak.storage.ldap.idm.query.internal.LDAPQuery@6937dc5
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:207)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	... 60 more
-Caused by: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	... 61 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 88 more
-
-2017-05-11 10:07:41,411 ERROR [org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager] (default task-56) Could not query server using DN [cn=users,dc=test,dc=keycloak,dc=com] and filter [(&(cn=testgebruiker1)(objectclass=person)(objectclass=organizationalPerson)(objectclass=user))]: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.getUserByUsername(UserStorageManager.java:317)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUserByUsername(UserCacheSession.java:246)
-	at org.keycloak.models.utils.KeycloakModelUtils.findUserByNameOrEmail(KeycloakModelUtils.java:214)
-	at org.keycloak.authentication.authenticators.browser.AbstractUsernameFormAuthenticator.validateUserAndPassword(AbstractUsernameFormAuthenticator.java:133)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.validateForm(UsernamePasswordForm.java:56)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.action(UsernamePasswordForm.java:49)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:92)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:76)
-	at org.keycloak.authentication.AuthenticationProcessor.authenticationAction(AuthenticationProcessor.java:759)
-	at org.keycloak.services.resources.LoginActionsService.processFlow(LoginActionsService.java:365)
-	at org.keycloak.services.resources.LoginActionsService.processAuthentication(LoginActionsService.java:347)
-	at org.keycloak.services.resources.LoginActionsService.authenticateForm(LoginActionsService.java:401)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 92 more
-
-2017-05-11 10:07:41,413 WARN  [org.keycloak.services] (default task-56) KC-SERVICES0013: Failed authentication: org.keycloak.models.ModelException: LDAP Query failed
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:168)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.getUserByUsername(UserStorageManager.java:317)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUserByUsername(UserCacheSession.java:246)
-	at org.keycloak.models.utils.KeycloakModelUtils.findUserByNameOrEmail(KeycloakModelUtils.java:214)
-	at org.keycloak.authentication.authenticators.browser.AbstractUsernameFormAuthenticator.validateUserAndPassword(AbstractUsernameFormAuthenticator.java:133)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.validateForm(UsernamePasswordForm.java:56)
-	at org.keycloak.authentication.authenticators.browser.UsernamePasswordForm.action(UsernamePasswordForm.java:49)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:92)
-	at org.keycloak.authentication.DefaultAuthenticationFlow.processAction(DefaultAuthenticationFlow.java:76)
-	at org.keycloak.authentication.AuthenticationProcessor.authenticationAction(AuthenticationProcessor.java:759)
-	at org.keycloak.services.resources.LoginActionsService.processFlow(LoginActionsService.java:365)
-	at org.keycloak.services.resources.LoginActionsService.processAuthentication(LoginActionsService.java:347)
-	at org.keycloak.services.resources.LoginActionsService.authenticateForm(LoginActionsService.java:401)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.keycloak.models.ModelException: Querying of LDAP failed org.keycloak.storage.ldap.idm.query.internal.LDAPQuery@4b546303
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:207)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	... 64 more
-Caused by: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	... 65 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 92 more
-
-2017-05-11 10:07:41,414 WARN  [org.keycloak.events] (default task-56) type=LOGIN_ERROR, realmId=master, clientId=angular-client, userId=null, ipAddress=127.0.0.1, error=invalid_user_credentials, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:3276/, code_id=1e936f56-9971-4aa1-8fd1-4f52353fbbe1, username=testgebruiker1
-2017-05-11 10:08:06,791 ERROR [org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager] (default task-64) Could not query server using DN [cn=users,dc=test,dc=keycloak,dc=com] and filter [(&(cn=administrator)(objectclass=person)(objectclass=organizationalPerson)(objectclass=user))]: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:289)
-	at org.keycloak.storage.UserStorageManager.getUsers(UserStorageManager.java:445)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUsers(UserCacheSession.java:585)
-	at org.keycloak.services.resources.admin.UsersResource.getUsers(UsersResource.java:700)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 88 more
-
-2017-05-11 10:08:06,793 ERROR [io.undertow.request] (default task-64) UT005023: Exception handling request to /auth/admin/realms/master/users: org.jboss.resteasy.spi.UnhandledException: org.keycloak.models.ModelException: LDAP Query failed
-	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:76)
-	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:212)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:168)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:411)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.keycloak.models.ModelException: LDAP Query failed
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:168)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getFirstResult(LDAPQuery.java:175)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadLDAPUserByUsername(LDAPStorageProvider.java:725)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.loadAndValidateUser(LDAPStorageProvider.java:429)
-	at org.keycloak.storage.ldap.LDAPStorageProvider.validate(LDAPStorageProvider.java:153)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:245)
-	at org.keycloak.storage.UserStorageManager.importValidation(UserStorageManager.java:289)
-	at org.keycloak.storage.UserStorageManager.getUsers(UserStorageManager.java:445)
-	at org.keycloak.models.cache.infinispan.UserCacheSession.getUsers(UserCacheSession.java:585)
-	at org.keycloak.services.resources.admin.UsersResource.getUsers(UsersResource.java:700)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
-	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:138)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:107)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invokeOnTargetObject(ResourceLocatorInvoker.java:133)
-	at org.jboss.resteasy.core.ResourceLocatorInvoker.invoke(ResourceLocatorInvoker.java:101)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395)
-	... 37 more
-Caused by: org.keycloak.models.ModelException: Querying of LDAP failed org.keycloak.storage.ldap.idm.query.internal.LDAPQuery@6df44974
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:207)
-	at org.keycloak.storage.ldap.idm.query.internal.LDAPQuery.getResultList(LDAPQuery.java:164)
-	... 60 more
-Caused by: javax.naming.CommunicationException: 192.168.0.25:389 [Root exception is java.net.ConnectException: Connection timed out: connect]
-	at com.sun.jndi.ldap.Connection.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapClientFactory.createPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.pool.Connections.<init>(Unknown Source)
-	at com.sun.jndi.ldap.pool.Pool.getPooledConnection(Unknown Source)
-	at com.sun.jndi.ldap.LdapPoolManager.getLdapClient(Unknown Source)
-	at com.sun.jndi.ldap.LdapClient.getInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.connect(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtx.<init>(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(Unknown Source)
-	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(Unknown Source)
-	at org.jboss.as.naming.InitialContext.getDefaultInitCtx(InitialContext.java:114)
-	at org.jboss.as.naming.InitialContext.init(InitialContext.java:99)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.jboss.as.naming.InitialContext.<init>(InitialContext.java:89)
-	at org.jboss.as.naming.InitialContextFactory.getInitialContext(InitialContextFactory.java:43)
-	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
-	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
-	at javax.naming.InitialContext.init(Unknown Source)
-	at javax.naming.ldap.InitialLdapContext.<init>(Unknown Source)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.createLdapContext(LDAPOperationManager.java:543)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:632)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.execute(LDAPOperationManager.java:625)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPOperationManager.search(LDAPOperationManager.java:226)
-	at org.keycloak.storage.ldap.idm.store.ldap.LDAPIdentityStore.fetchQueryResults(LDAPIdentityStore.java:198)
-	... 61 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at java.net.Socket.<init>(Unknown Source)
-	at com.sun.jndi.ldap.Connection.createSocket(Unknown Source)
-	... 88 more
-
-2017-05-11 10:09:38,353 INFO  [org.keycloak.storage.ldap.LDAPIdentityStoreRegistry] (default task-24) Creating new LDAP Store for the LDAP storage provider: 'ldap', LDAP Configuration: {fullSyncPeriod=[604800], pagination=[true], usersDn=[cn=users,dc=test,dc=keycloak,dc=com], connectionPooling=[true], cachePolicy=[DEFAULT], useKerberosForPasswordAuthentication=[false], importEnabled=[true], changedSyncPeriod=[86400], usernameLDAPAttribute=[cn], bindDn=[cn=administrator,cn=users,dc=test,dc=keycloak,dc=com], lastSync=[1494226557], vendor=[ad], uuidLDAPAttribute=[objectGUID], connectionUrl=[ldap://192.168.0.11:389/], allowKerberosAuthentication=[false], syncRegistrations=[true], authType=[simple], debug=[false], searchScope=[2], useTruststoreSpi=[ldapsOnly], priority=[0], userObjectClasses=[person, organizationalPerson, user], rdnLDAPAttribute=[cn], editMode=[WRITABLE], batchSizeForSync=[1000]}, binaryAttributes: []
-2017-05-11 11:26:50,255 WARN  [org.keycloak.events] (default task-9) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
-2017-05-11 11:26:51,555 ERROR [io.undertow.request] (default task-47) UT005023: Exception handling request to /auth/resources/3.0.0.final/admin/keycloak/lib/patternfly/fonts/OpenSans-ExtraBold-webfont.woff: org.jboss.resteasy.spi.UnhandledException: RESTEASY003770: Response is committed, can't handle exception
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:167)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:471)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:415)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
-	at sun.nio.ch.SocketDispatcher.write0(Native Method)
-	at sun.nio.ch.SocketDispatcher.write(Unknown Source)
-	at sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
-	at sun.nio.ch.IOUtil.write(Unknown Source)
-	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
-	at org.xnio.nio.NioSocketConduit.write(NioSocketConduit.java:152)
-	at io.undertow.protocols.ssl.SslConduit.doWrap(SslConduit.java:824)
-	at io.undertow.protocols.ssl.SslConduit.write(SslConduit.java:348)
-	at io.undertow.server.protocol.http.HttpResponseConduit.processWrite(HttpResponseConduit.java:254)
-	at io.undertow.server.protocol.http.HttpResponseConduit.write(HttpResponseConduit.java:625)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.doWrite(ChunkedStreamSinkConduit.java:163)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:127)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:216)
-	at org.xnio.conduits.ConduitStreamSinkChannel.write(ConduitStreamSinkChannel.java:158)
-	at io.undertow.channels.DetachableStreamSinkChannel.write(DetachableStreamSinkChannel.java:179)
-	at io.undertow.server.HttpServerExchange$WriteDispatchChannel.write(HttpServerExchange.java:1965)
-	at org.xnio.channels.Channels.writeBlocking(Channels.java:152)
-	at io.undertow.servlet.spec.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:184)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletResponseWrapper$DeferredOutputStream.write(HttpServletResponseWrapper.java:46)
-	at org.jboss.resteasy.util.CommitHeaderOutputStream.write(CommitHeaderOutputStream.java:71)
-	at org.jboss.resteasy.plugins.providers.ProviderHelper.writeTo(ProviderHelper.java:126)
-	at org.jboss.resteasy.plugins.providers.InputStreamProvider.writeTo(InputStreamProvider.java:64)
-	at org.jboss.resteasy.plugins.providers.InputStreamProvider.writeTo(InputStreamProvider.java:25)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:131)
-	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:60)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:120)
-	at org.jboss.resteasy.security.doseta.DigitalSigningInterceptor.aroundWriteTo(DigitalSigningInterceptor.java:145)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:124)
-	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:100)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:124)
-	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:98)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:466)
-	... 38 more
-
-2017-05-11 14:16:58,156 WARN  [org.keycloak.events] (default task-46) type=LOGIN_ERROR, realmId=master, clientId=angular-client, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:3276/, code_id=fdc1ea7b-6c8c-4347-913c-33aac7d3cf16, username=testgebruiker1Truesh0t8ra
-2017-05-11 15:57:31,990 WARN  [org.keycloak.events] (default task-61) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
-2017-05-11 15:57:33,510 ERROR [io.undertow.request] (default task-32) UT005023: Exception handling request to /auth/resources/3.0.0.final/admin/keycloak/lib/patternfly/fonts/OpenSans-ExtraBold-webfont.woff: org.jboss.resteasy.spi.UnhandledException: RESTEASY003770: Response is committed, can't handle exception
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:167)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:471)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:415)
-	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202)
-	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.keycloak.services.filters.KeycloakSessionServletFilter.doFilter(KeycloakSessionServletFilter.java:90)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
-	at sun.nio.ch.SocketDispatcher.write0(Native Method)
-	at sun.nio.ch.SocketDispatcher.write(Unknown Source)
-	at sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
-	at sun.nio.ch.IOUtil.write(Unknown Source)
-	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
-	at org.xnio.nio.NioSocketConduit.write(NioSocketConduit.java:152)
-	at io.undertow.protocols.ssl.SslConduit.doWrap(SslConduit.java:824)
-	at io.undertow.protocols.ssl.SslConduit.write(SslConduit.java:348)
-	at io.undertow.server.protocol.http.HttpResponseConduit.processWrite(HttpResponseConduit.java:254)
-	at io.undertow.server.protocol.http.HttpResponseConduit.write(HttpResponseConduit.java:625)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.doWrite(ChunkedStreamSinkConduit.java:163)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:127)
-	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:216)
-	at org.xnio.conduits.ConduitStreamSinkChannel.write(ConduitStreamSinkChannel.java:158)
-	at io.undertow.channels.DetachableStreamSinkChannel.write(DetachableStreamSinkChannel.java:179)
-	at io.undertow.server.HttpServerExchange$WriteDispatchChannel.write(HttpServerExchange.java:1965)
-	at org.xnio.channels.Channels.writeBlocking(Channels.java:152)
-	at io.undertow.servlet.spec.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:184)
-	at org.jboss.resteasy.plugins.server.servlet.HttpServletResponseWrapper$DeferredOutputStream.write(HttpServletResponseWrapper.java:46)
-	at org.jboss.resteasy.util.CommitHeaderOutputStream.write(CommitHeaderOutputStream.java:71)
-	at org.jboss.resteasy.plugins.providers.ProviderHelper.writeTo(ProviderHelper.java:126)
-	at org.jboss.resteasy.plugins.providers.InputStreamProvider.writeTo(InputStreamProvider.java:64)
-	at org.jboss.resteasy.plugins.providers.InputStreamProvider.writeTo(InputStreamProvider.java:25)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:131)
-	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:60)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:120)
-	at org.jboss.resteasy.security.doseta.DigitalSigningInterceptor.aroundWriteTo(DigitalSigningInterceptor.java:145)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:124)
-	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:100)
-	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:124)
-	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:98)
-	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:466)
-	... 38 more
-
+2017-05-16 15:58:06,383 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2017-05-16 15:58:07,314 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/KeycloakDS]
+2017-05-16 15:58:07,381 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-05-16 15:58:07,384 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-05-16 15:58:07,440 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 58) WFLYUT0022: Unregistered web context: /auth
+2017-05-16 15:58:07,589 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2017-05-16 15:58:07,606 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-05-16 15:58:07,612 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-05-16 15:58:07,656 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2017-05-16 15:58:07,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0003: Stopped sessions cache from keycloak container
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 59) WFLYCLINF0003: Stopped loginFailures cache from keycloak container
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0003: Stopped keys cache from keycloak container
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 60) WFLYCLINF0003: Stopped work cache from keycloak container
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0003: Stopped offlineSessions cache from keycloak container
+2017-05-16 15:58:07,660 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0003: Stopped authorization cache from keycloak container
+2017-05-16 15:58:07,672 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.3.15.Final stopping
+2017-05-16 15:58:07,668 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment keycloak-server.war (runtime-name: keycloak-server.war) in 385ms
+2017-05-16 15:58:07,661 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped users cache from keycloak container
+2017-05-16 15:58:07,662 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0003: Stopped realms cache from keycloak container
+2017-05-16 15:58:07,690 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) WFLYCLINF0003: Stopped realmRevisions cache from keycloak container
+2017-05-16 15:58:07,693 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) WFLYCLINF0003: Stopped userRevisions cache from keycloak container
+2017-05-16 15:58:07,738 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: Keycloak 3.0.0.Final (WildFly Core 2.0.10.Final) stopped in 448ms

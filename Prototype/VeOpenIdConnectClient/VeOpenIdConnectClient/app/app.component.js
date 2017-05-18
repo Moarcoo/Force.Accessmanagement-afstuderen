@@ -17,7 +17,7 @@ let AppComponent = class AppComponent {
         this.dataService = dataService;
         this.session = JSON.parse(sessionStorage.getItem("session"));
         this.token = JSON.parse(sessionStorage.getItem("token"));
-        this.mortgageFile = JSON.parse(sessionStorage.getItem("mortgageFile"));
+        this.contract = JSON.parse(sessionStorage.getItem("contract"));
         this.getValueFromToken = (type) => {
             var result = "";
             if (!this.token)
@@ -39,11 +39,12 @@ let AppComponent = class AppComponent {
         this.session.isAuthenticated = false;
         this.dataService.logout();
     }
-    getMortgageFileForUser() {
+    getContract() {
         if (this.session != null) {
-            var el = document.getElementById('dossierId');
-            var dossierId = el.value;
-            this.dataService.getMortgageFileForUser(dossierId);
+            //            var el: HTMLInputElement = <HTMLInputElement>document.getElementById('dossierId');
+            //            var dossierId = el.value;
+            var contractId = "010101";
+            this.dataService.getContract(contractId);
         }
     }
     getIdToken() {

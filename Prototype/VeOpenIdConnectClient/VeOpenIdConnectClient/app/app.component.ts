@@ -15,7 +15,7 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppComponent implements  OnInit {
     session = JSON.parse(sessionStorage.getItem("session"));
     token = JSON.parse(sessionStorage.getItem("token"));
-    mortgageFile = JSON.parse(sessionStorage.getItem("mortgageFile"));
+    contract = JSON.parse(sessionStorage.getItem("contract"));
 
     constructor(private dataService: DataService) {
         //if (!this.session) this.dataService.login();
@@ -33,11 +33,12 @@ export class AppComponent implements  OnInit {
         this.dataService.logout();
     }
 
-    getMortgageFileForUser() {
+    getContract() {
         if (this.session != null) {
-            var el: HTMLInputElement = <HTMLInputElement>document.getElementById('dossierId');
-            var dossierId = el.value;
-            this.dataService.getMortgageFileForUser(dossierId);
+//            var el: HTMLInputElement = <HTMLInputElement>document.getElementById('dossierId');
+//            var dossierId = el.value;
+            var contractId = "010101";
+            this.dataService.getContract(contractId);
         }
     }
 

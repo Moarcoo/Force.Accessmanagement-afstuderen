@@ -138,8 +138,14 @@
   <data name="keycloak_authority" xml:space="preserve">
     <value>https://localhost:8443/auth/realms/master</value>
   </data>
+  <data name="keycloak_authorization_api_endpoint" xml:space="preserve">
+    <value>https://localhost:8443/auth/realms/master/authz/authorize</value>
+  </data>
   <data name="keycloak_client_roles_claim" xml:space="preserve">
     <value>client_roles</value>
+  </data>
+  <data name="keycloak_entitlement_endpoint" xml:space="preserve">
+    <value>https://localhost:8443/auth/realms/master/authz/entitlement</value>
   </data>
   <data name="keycloak_name_claim" xml:space="preserve">
     <value>name</value>
@@ -152,5 +158,8 @@
   </data>
   <data name="provider" xml:space="preserve">
     <value>OpenIdConnect</value>
+  </data>
+  <data name="wcfservice_clientid" xml:space="preserve">
+    <value>WCF-client</value>
   </data>
 </root>

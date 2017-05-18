@@ -15,18 +15,17 @@ namespace WCFOpenIdConnectClient
 
         [OperationContract]
         [FaultContract(typeof(ServiceFault))]
-        Task<string> GetData(int value);
+        string GetData(int value);
 
         // The FaultContract solution for throwing errors comes from:
         // http://stackoverflow.com/questions/12647615/wcf-service-exception-good-practices
         [OperationContract]
         [FaultContract(typeof(ServiceFault))]
-        Task<MortgageFile> GetMortgageFileForUser(string dossierId);
-
+        Contract GetContract(string dossierId, string rpt);
     }
 
     [DataContract]
-    public class MortgageFile
+    public class Contract
     {
         [DataMember]
         public Guid Guid { get; set; }
@@ -35,7 +34,9 @@ namespace WCFOpenIdConnectClient
         [DataMember]
         public double RentePercentage { get; set; }
         [DataMember]
-        public string Whiteblabel { get; set; }
+        public string Whitelabel { get; set; }
+        [DataMember]
+        public string Permissions { get; set; }
     }
 
     [DataContract]

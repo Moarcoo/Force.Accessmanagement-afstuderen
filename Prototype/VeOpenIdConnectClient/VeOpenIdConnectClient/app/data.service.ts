@@ -40,10 +40,10 @@ export class DataService {
         });
     }
 
-    getMortgageFileForUser = (dossierId: string): void => {
-        this.http.get('http://localhost:3276/api/mortgage/GetMortgageFileForUser?dossierId=' + dossierId).subscribe(response => {
+    getContract = (contractId: string): void => {
+        this.http.get('http://localhost:3276/api/mortgage/GetContract?contractId=' + contractId).subscribe(response => {
             if (response.status === 200) {
-                sessionStorage.setItem("mortgageFile", JSON.stringify(response.json()));
+                sessionStorage.setItem("contract", JSON.stringify(response.json()));
                 window.location.reload();
             }
             else alert(response.status);
